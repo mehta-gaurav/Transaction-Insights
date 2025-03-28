@@ -1,4 +1,4 @@
-package com.og.transactioninsight.service;
+package com.og.transactioninsight.listener;
 
 import java.util.Date;
 import java.util.Optional;
@@ -10,11 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.og.transactioninsight.config.RabbitMQConfig;
+import com.og.transactioninsight.dto.TransactionEvent;
 import com.og.transactioninsight.entity.AssociatedTransactionId;
 import com.og.transactioninsight.entity.InsightType;
 import com.og.transactioninsight.entity.TransactionInsights;
 import com.og.transactioninsight.repository.TransactionInsightsRepository;
-import com.og.transactioninsight.service.dto.TransactionEvent;
 
 
 @Service

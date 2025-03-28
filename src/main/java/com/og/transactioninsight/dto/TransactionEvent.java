@@ -1,4 +1,4 @@
-package com.og.transactioninsight.service.dto;
+package com.og.transactioninsight.dto;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -16,5 +16,6 @@ public class TransactionEvent {
     private String type;
     private BigDecimal amount;
     private Date transactionDate;
+    private String status;
 
 }
